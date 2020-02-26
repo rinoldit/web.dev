@@ -271,6 +271,16 @@ the render times of these other elements instead. This is possible using the
 [Element Timing API](https://wicg.github.io/element-timing/), as described in
 the article on [custom metrics](/custom-metrics/#element-timing-api).
 
+## What is a good LCP score?
+
+To provide a good user experience, site's should strive to have Largest
+Contentful Paint occur within the first **2.5 seconds** of the page starting to
+load for at least **75% of page loads**.
+
+Google tools that measure and score website performance will consider an LCP
+score of less than 2.5 seconds to be _fast_. Conversely, an LCP score of mroe
+than 4 seconds will be considered _slow_.
+
 ## How to improve LCP
 
 LCP is primarily affected by three factors:

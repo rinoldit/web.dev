@@ -86,6 +86,13 @@ TTI](/interactive/) for usage details.
 
 ## What is a good TTI score?
 
+To provide a good user experience, site's should strive to have a Time to
+Interactive of less than **3.8 seconds** when tested on average mobile hardware.
+
+Google tools that measure and score website performance will consider a TTI
+score of less than 3.8 seconds or less to be _fast_. Conversely, a TTI score of
+more than 7.3 seconds will be considered _slow_.
+
 For details on how your page's TTI affects your Lighthouse performance score,
 see [How Lighthouse determines your TTI
 score](/interactive/#how-lighthouse-determines-your-tti-score).

@@ -91,24 +91,15 @@ observer.observe({
 Note, in your own code, you'd likely replace the `console.log()` with code that
 sends the FCP value to your analytics service.
 
-## What is a good FCP?
+## What is a good FCP score?
 
-[RAIL](https://developers.google.com/web/fundamentals/performance/rail)
-guidelines suggest that after 1000 milliseconds (ms), users may lose focus if
-nothing happens after performing a task. Since FCP is the first indication users
-have that something is happening, it's best if the majority of page loads report
-FCP is less than a second (1000 ms).
+To provide a good user experience, site's should strive to have First Contentful
+Paint occur within **1 second** of the page starting to load for at least **75%
+of page loads**.
 
-**For field measurement:** Page Speed Insights will
-[report](https://developers.google.com/speed/docs/insights/v5/about#distribution)
-FCP as "fast" for values 1 second or less, "moderate" for values between 1 and 3
-seconds, and "slow" for any values above 3 seconds.
-
-**For lab measurement:** Lighthouse will give a perfect score (100) to an FCP
-value 1 second or less, and the score will go down as FCP gets slower. Refer to
-the [Lighthouse scoring
-guide](https://developers.google.com/web/tools/lighthouse/v3/scoring#perf) for
-more details.
+Google tools that measure and score website performance will consider an FCP
+score of less than 1 second to be _fast_. Conversely, an FCP score of more than
+3 seconds will be considered _slow_.
 
 ## How to improve FCP
 
